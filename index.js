@@ -5,7 +5,7 @@ const app = require('./app');
 const port = 3700;
 
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb+srv://sebas:juanse2820@cluster0-o6olj.mongodb.net/masterjs?retryWrites=true&w=majority')
+mongoose.connect('mongodb+srv://<user>:<password>@cluster0-o6olj.mongodb.net/masterjs?retryWrites=true&w=majority')
         .then(() => {
         	console.log("Conexión a la base de datos establecida satisfactoriamente...");
 
